@@ -6,3 +6,4 @@ echoc
 echohs
 echo
 *.o
+echo.hi
