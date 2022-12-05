@@ -4,3 +4,5 @@ echo.jar
 echoasm
 echoc
 echohs
+echo
+*.o
