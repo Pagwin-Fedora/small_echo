@@ -8,10 +8,8 @@ echo.jar: echo.class
 echo.class: echo.java
 	javac echo.java
 echors: echo.rs
-	rustc echo.rs
+	rustc echo.rs -o echors
 echoc: echo.c
 	$(CC) -o echoc echo.c
 echohs: echo.hs
-	# for some reason when I try to run ghc outright it breaks
-	sh -c "ghc echo.hs"
-	mv echo echohs
+	ghc echo.hs -o echohs
