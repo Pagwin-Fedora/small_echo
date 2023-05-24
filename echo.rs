@@ -1,7 +1,7 @@
-use std::io::{Read, Write,Stdin,stdin,Stdout,stdout};
+use std::io::{Read, Write,stdin,stdout};
 fn main(){
     for c in stdin().lock().bytes(){
         let buf:&[u8] = &[c.unwrap()];
-        stdout().lock().write(buf);
+        let _ = stdout().lock().write(buf);
     }
 }
