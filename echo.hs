@@ -1,3 +1,1 @@
-echo :: IO()
-echo = do{ getChar>>=putChar; echo}
-main = echo
+main = getChar>>=putChar>>main
